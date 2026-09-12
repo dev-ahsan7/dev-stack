@@ -1,6 +1,7 @@
 import { ToastContainer } from 'react-toastify';
 import Nav from './Components/Nav';
 import HeroBanner from './Components/HeroBanner';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <Nav />
       <HeroBanner />
       <ToastContainer />
+
+      <Footer />
     </>
   );
 }
