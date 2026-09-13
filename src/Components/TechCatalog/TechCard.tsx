@@ -26,7 +26,11 @@ const getBadgeColor = (label: string) => {
 const TechCard = ({ tech, isAdded, onAdd }: TechCardProps) => {
   const badgeColor = getBadgeColor(tech.badge);
   return (
-    <div className="border border-gray-100 rounded-2xl p-5 flex flex-col gap-4">
+    <div
+      className={`border rounded-2xl p-5 flex flex-col gap-4 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md ${
+        isAdded ? 'border-emerald-300 bg-emerald-50/30' : 'border-gray-100'
+      }`}
+    >
       {/* Image & Badge */}
       <div className="flex items-center justify-between">
         <img src={tech.icon} alt={tech.name} className="w-10 h-10" />
@@ -62,7 +66,7 @@ const TechCard = ({ tech, isAdded, onAdd }: TechCardProps) => {
       <button
         disabled={isAdded}
         onClick={() => onAdd(tech)}
-        className={`w-full py-3 text-sm rounded-lg font-semibold transition-colors ${isAdded ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-gray-900 cursor-pointer  text-white hover:bg-gray'}`}
+        className={`w-full py-3 text-sm rounded-lg font-semibold transition-colors ${isAdded ? 'bg-gray-100 text-gray-400 cursor-not-allowed' : 'bg-gray-900 text-white cursor-pointer hover:bg-gray-800'}`}
       >
         {isAdded ? '✓ Added to Stack' : 'Add to Stack'}
       </button>

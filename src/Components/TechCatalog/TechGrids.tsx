@@ -9,7 +9,7 @@ interface TechGridsProps {
 
 const TechGrids = ({ technology, stack, onAdd }: TechGridsProps) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-5">
       {technology.map((tech) => (
         <TechCard
           key={tech.id}

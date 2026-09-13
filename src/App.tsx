@@ -20,7 +20,13 @@ function App() {
       <HeroBanner />
       <ToastContainer />
 
-      <Suspense fallback={<div>Loading Data....</div>}>
+      <Suspense
+        fallback={
+          <div className="text-3xl container max-w-7xl mx-auto px-4 md:px-8 py-10">
+            Loading Data....
+          </div>
+        }
+      >
         <TechCatalogSection technologyPromise={technologyPromise} />
       </Suspense>
 

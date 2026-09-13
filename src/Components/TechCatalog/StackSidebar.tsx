@@ -38,7 +38,7 @@ const StackSidebar = ({ stack, onRemove, onRemoveAll }: StackSidebarProps) => {
                 </div>
                 <button
                   onClick={() => onRemove(tech.id)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="text-red-400 p-3 cursor-pointer hover:bg-red-100 rounded-full hover:text-red-600"
                 >
                   <IoCloseOutline className="w-5 h-5" />
                 </button>
@@ -48,7 +48,7 @@ const StackSidebar = ({ stack, onRemove, onRemoveAll }: StackSidebarProps) => {
 
           <button
             onClick={onRemoveAll}
-            className="w-full mt-6 py-3 rounded-xl border border-red-200 text-red-500 text-sm font-semibold hover:bg-red-50 transition-colors"
+            className="w-full mt-6 py-3 cursor-pointer rounded-xl border border-red-200 text-red-500 text-sm font-semibold hover:bg-red-50 transition-colors"
           >
             Remove All
           </button>

@@ -21,7 +21,7 @@ const HeroBanner = () => {
               project.
             </p>
 
-            <div className="w-full mt-6 md:mt-12 flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+            <div className="w-full mt-6 md:mt-12 flex flex-row flex-wrap items-center gap-3 justify-center md:justify-start">
               <button className="px-4 py-3 cursor-pointer rounded-lg bg-[linear-gradient(90deg,#F97316_0%,#EC4899_100%)] shadow-[0px_1px_2px_0px_#0000000D] text-white font-medium text-sm flex items-center justify-center hover:opacity-90 transition-opacity">
                 Explore Technologies
               </button>
@@ -32,11 +32,10 @@ const HeroBanner = () => {
           </div>
 
           {/* right image */}
-          {/* right image */}
           <div className="flex-1 w-full flex justify-center md:justify-end">
             <img
               src={heroImg}
-              className="w-full max-w-70 sm:max-w-90 md:max-w-none md:w-96 lg:w-130 h-auto object-contain"
+              className="w-full max-w-[260px] sm:max-w-[340px] md:max-w-none md:w-96 lg:w-130 h-auto object-contain"
             />
           </div>
         </div>

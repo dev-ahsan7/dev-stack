@@ -56,7 +56,7 @@ const TechCatalogSection = ({ technologyPromise }: TechCatalogSectionProps) => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-6 items-start">
+      <div className="flex flex-col md:flex-row gap-5 items-start">
         <div className="order-2 md:order-1 w-full">
           <TechGrids technology={technology} stack={stack} onAdd={addToStack} />
         </div>
