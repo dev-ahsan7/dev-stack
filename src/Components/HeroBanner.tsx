@@ -7,7 +7,7 @@ const HeroBanner = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           {/* left content */}
           <div className="flex-1 w-full text-center md:text-left">
-            <h1 className="font-['Inter'] font-extrabold text-[32px] sm:text-[48px] lg:text-[60px] leading-[1.15] lg:leading-15 tracking-[-1.5px] align-middle">
+            <h1 className="font-extrabold text-[32px] sm:text-[48px] lg:text-[60px] leading-[1.15] lg:leading-15 tracking-[-1.5px] align-middle">
               <span className="text-[#0F172A]">Build Your Ideal</span>
               <br />
               <span className="bg-[linear-gradient(90deg,#FF5722_0%,#D81B7E_50%,#7C3AED_100%)] bg-clip-text text-transparent">
