@@ -3,7 +3,7 @@ import heroImg from '../assets/banner-stack.png';
 const HeroBanner = () => {
   return (
     <section className="w-full">
-      <div className="container max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-20">
+      <div className="container max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
           {/* left content */}
           <div className="flex-1 w-full text-center md:text-left">
@@ -21,7 +21,7 @@ const HeroBanner = () => {
               project.
             </p>
 
-            <div className="w-full mt-6 md:mt-12 flex flex-row flex-wrap items-center gap-3 justify-center md:justify-start">
+            <div className="w-full mt-6 md:mt-4 flex flex-row flex-wrap items-center gap-3 justify-center md:justify-start">
               <button className="px-4 py-3 cursor-pointer rounded-lg bg-[linear-gradient(90deg,#F97316_0%,#EC4899_100%)] shadow-[0px_1px_2px_0px_#0000000D] text-white font-medium text-sm flex items-center justify-center hover:opacity-90 transition-opacity">
                 Explore Technologies
               </button>
@@ -35,7 +35,7 @@ const HeroBanner = () => {
           <div className="flex-1 w-full flex justify-center md:justify-end">
             <img
               src={heroImg}
-              className="w-full max-w-[260px] sm:max-w-[340px] md:max-w-none md:w-96 lg:w-130 h-auto object-contain"
+              className="w-full max-w-110 sm:max-w-120 md:max-w-none md:w-96 lg:w-130 h-auto object-contain"
             />
           </div>
         </div>
