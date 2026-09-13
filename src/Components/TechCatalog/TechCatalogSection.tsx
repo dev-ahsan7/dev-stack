@@ -57,9 +57,11 @@ const TechCatalogSection = ({ technologyPromise }: TechCatalogSectionProps) => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-6 items-start">
-        <TechGrids technology={technology} stack={stack} onAdd={addToStack} />
+        <div className="order-2 md:order-1 w-full">
+          <TechGrids technology={technology} stack={stack} onAdd={addToStack} />
+        </div>
 
-        <div className="lg:sticky lg:top-6">
+        <div className="order-1 w-full md:order-2 md:w-auto lg:sticky lg:top-6">
           <StackSidebar
             stack={stack}
             onRemove={removeFromStack}
