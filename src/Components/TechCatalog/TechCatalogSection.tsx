@@ -44,7 +44,7 @@ const TechCatalogSection = ({ technologyPromise }: TechCatalogSectionProps) => {
   return (
     <section className="container max-w-7xl mx-auto px-4 md:px-8 py-10">
       <div className="">
-        <h2 className="font-['Inter'] font-extrabold text-[36px]  align-middle">
+        <h2 className=" font-extrabold text-[36px]  align-middle">
           <span className="text-gray-900">Explore the </span>
           <span className="bg-[linear-gradient(90deg,#EC4899_0%,#8B5CF6_100%)] bg-clip-text text-transparent">
             Technologies
